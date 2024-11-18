@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="servico.css">
+    <link rel="stylesheet" href="./styles/servicio.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     </header>
 
     <main>
-        <form id="contact-form">
+        <form id="contact-form" method="POST" action="procesar_compra.php">
             <label for="nombre">Nombre Completo:</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -36,6 +36,7 @@
             <label for="comentarios">Comentarios:</label>
             <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
 
+            <input type="hidden" id="total-compra" name="total-compra" value="">
             <button type="submit">Enviar</button>
         </form>
     </main>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> El Mandil Pasteleria & Mas </title>
-    <link rel="stylesheet" href="mandil.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
 
 
@@ -18,67 +20,67 @@
 
     <main>
         <section id="productos" class="productos">
-            
+
             <div class="galeria-productos">
-                <div class="producto" data-precio="210.00">
-                    <img src="frape de fresa.jpg" alt="frappe de fresa">
+                <div class="producto"  data-precio="210.00">
+                    <img src="./img/frape de fresa.jpg" alt="frappe de fresa">
                     <h3>Frappe de Fresa</h3>
                     <span class="precio">$210.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="producto" data-precio="250.00">
-                    <img src="frape de caramelo.jpg" alt="frappe de caramelo">
+                    <img src="./img/frape de caramelo.jpg" alt="frappe de caramelo">
                     <h3>Frappe de Caramelo </h3>
                     <span class="precio">$250.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="producto" data-precio="230.00">
-                    <img src="frappe de oreo.jpg" alt="frappe de Oreo">
-                    <h3>Frappe de Oreo</h3>         
+                    <img src="./img/frappe de oreo.jpg" alt="frappe de Oreo">
+                    <h3>Frappe de Oreo</h3>
                     <span class="precio">$230.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="producto" data-precio="310.00">
-                    <img src="mangu.jpg" alt="mangu">
+                    <img src="./img/mangu.jpg" alt="mangu">
                     <h3>Mangu con cebolla,aguacate,
                         queso,salimi y mas</h3>
                     <span class="precio">$310.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
                 <div class="producto" data-precio="200.00">
-                    <img src="tortilla.jpg" alt="tortilla">
-                    <h3>Tortilla de Huevo con Vejetales </h3>         
+                    <img src="./img/tortilla.jpg" alt="tortilla">
+                    <h3>Tortilla de Huevo con Vejetales </h3>
                     <span class="precio">$200.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="producto" data-precio="290.00">
-                    <img src="paqueque.jpg" alt="paqueque">
+                    <img src="./img/paqueque.jpg" alt="paqueque">
                     <h3>Panqueque con chispa de Chocolate y Fresa</h3>
                     <span class="precio">$290.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="producto" data-precio="949.00">
-                    <img src="biscocho de chocolate.jpg" alt="biscocho de chocolate">
-                    <h3>Bizcocho de Chocolate</h3>         
+                    <img src="./img/biscocho de chocolate.jpg" alt="biscocho de chocolate">
+                    <h3>Bizcocho de Chocolate</h3>
                     <span class="precio">$949.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="producto" data-precio="1000.00">
-                    <img src="biscocho de fresa.jpg" alt="biscocho de Fresa">
-                    <h3>Bizcocho de </h3>    Fresa          
+                    <img src="./img/biscocho de fresa.jpg" alt="biscocho de Fresa">
+                    <h3>Bizcocho de </h3> Fresa
                     <span class="precio">$1000.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="producto" data-precio="2500.00">
-                    <img src="cumpleaños.jpg" alt="cumpleaños">
-                    <h3>Bizcocho dd Cumpleaños</h3>         
+                    <img src="./img/cumpleaños.jpg" alt="cumpleaños">
+                    <h3>Bizcocho dd Cumpleaños</h3>
                     <span class="precio">$2500.00</span>
                     <button class="comprar">Comprar</button>
                 </div>
@@ -88,7 +90,7 @@
             </div>
         </section>
 
-        
+
     </main>
 
     <footer>
@@ -99,124 +101,12 @@
         </ul>
     </footer>
 
-    <script src="mandil.js"></script>
-    
+    <script src="./script/index.js"></script>
+    <?php
+
+    include("productos.php")
+        ?>
+
 </body>
-</html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-</body>
 </html>

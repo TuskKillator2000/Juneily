@@ -20,9 +20,21 @@ document.getElementById('finalizar-compra').addEventListener('click', function()
     
     const total = calcularTotal();
     alert(`El total de tu compra es: $${total}`);
-    
-    // Redirigir a un formulario (aquí debes poner la URL de tu formulario)
-    window.location.href = "servico.html"; // Cambia esto por la URL real del formulario
+
+    // Crear un formulario dinámicamente y enviar los datos
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'servicio.html';
+
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = 'total-compra';
+    input.value = total;
+
+    form.appendChild(input);
+    document.body.appendChild(form);
+
+    form.submit();
 });
 
 // Ejemplo de cómo agregar productos al carrito
