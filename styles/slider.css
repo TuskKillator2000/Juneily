@@ -17,7 +17,8 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Ajusta el tamaño del logo */
+    height: 50px;
+    /* Ajusta el tamaño del logo */
 }
 
 nav {
@@ -29,6 +30,8 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
+    /* Alinea los links a la derecha */
 }
 
 .menu li {
@@ -42,54 +45,40 @@ nav {
 }
 
 .menu a:hover {
-    background-color: #555; /* Color de fondo al pasar el mouse */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: #555;
+    /* Color de fondo al pasar el mouse */
+    border-radius: 5px;
+    /* Bordes redondeados */
 }
 
-main {
-    padding: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-.slider {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-}
-
-.slide {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide img {
+.carousel {
+    margin-top: 90px;
+    /* Espacio entre el nav y el carrusel */
     width: 100%;
+    /* Ancho del carrusel */
+    max-width: 600px;
+    /* Ajusta el ancho máximo del carrusel */
+    height: 300px;
+    /* Altura fija para el contenedor del carrusel */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Para que los bordes redondeados se apliquen */
+    margin-left: auto;
+    /* Centra el carrusel */
+    margin-right: auto;
+    /* Centra el carrusel */
+    background-color: rgba(99, 178, 224, 0.87);
+    /* Color de fondo */
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+.carousel img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho del carrusel */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 300px;
+    /* Ajusta la altura máxima de las imágenes */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste dentro del contenedor */
 }
